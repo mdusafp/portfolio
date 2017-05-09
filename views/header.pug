@@ -1,0 +1,20 @@
+//include preloader
+
+header#header
+  nav.navbar
+    div.nav-wrapper
+      a(href='#').brand-logo Vadim
+      a(href='#', data-activates='mobile-demo').button-collapse
+        i.material-icons Menu
+
+      ul.right.hide-on-med-and-down
+        li.active: a(href='#') Home
+        li: a(href='#') About
+        li: a(href='#') My projects
+        li: a(href='#') Contacts
+
+      ul#mobile-demo.side-nav
+        li.active: a(href='#') Home
+          li: a(href='#') About
+          li: a(href='#') My projects
+          li: a(href='#') Contacts

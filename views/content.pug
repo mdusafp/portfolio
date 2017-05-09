@@ -1,0 +1,89 @@
+div#wrapper
+  div.row
+    div.navigation.col.s12.m4.l3
+      ul.menu
+        li.item
+          img(src='/images/avatar.png').responsive-img
+        li.item.active
+          a(href='#home')
+            i.fa.fa-home
+            span Главная
+        li.item
+          a(href='#about')
+            i.fa.fa-user
+            span Обо мне
+        li.item
+          a(href='#my-projects')
+            i.fa.fa-desktop
+            span Мои проекты
+        li.item
+          a(href='#contacts')
+            i.fa.fa-envelope
+            span Контакты
+
+    div.content.col.s12.m8.l9
+      div#home
+        h1.center-align Малютин Вадим
+        h2.center-align Веб разработчик
+
+      div#about
+        h4.center-align Обо мне
+        ul
+          li
+            p.
+              Родился и вырос в маленьком городе Балашов, Саратовской области.
+          li
+            p.
+              После окончания Гимназии №1 поступил в СПБГЭТУ &laquo;ЛЭТИ&raquo;,
+              где оканчиваю второй курс в данный момент.
+          li
+            p.
+              В начале прошлого года мы с моим другом Тимофеем создали IT-сообщество
+              "Vector" в нашем ВУЗ'е, где проводили различные контесты, лекции
+              и "движухи".
+          li
+            p.
+              Участвовал в ACM-ICPC, AI Hackathon 2017 spb,
+              участвовал со своим проектом на PR-FEST в качестве кейса,
+              крупнейшим в России мероприятии в сфере коммуникаций,
+              а так же занимался организацией и проведением
+              дня открытых дверей в ЛЭТИ.
+          li
+            p.
+              В скором времени буду участвовать в хакатоне code4piter.
+
+      div#my-projects
+        h4.center-align Мои проекты
+
+        // todo rewrite slider with mixins
+        div.owl-carousel.owl-theme
+          div.item
+            img(src='/images/ama_watches.png')
+          div.item
+            img(src='/images/pr_fest.png')
+          div.item
+            img(src='/images/eventer.png')
+          div.item
+            img(src='/images/mlita.png')
+          div.item
+            img(src='/images/schedule.png')
+
+      div#contacts
+        h4.center-align Контакты
+        ul#info.left-align
+          li
+            i.fa.fa-map-marker
+            p Санкт-Петербург, Россия
+          li
+            i.fa.fa-phone
+            p +7 (981) 144-64-27
+          li
+            i.fa.fa-envelope
+            p mdusafp@gmail.com
+          li
+            i.fa.fa-skype
+            p mdusafp@gmail.com
+          li
+            i.fa.fa-vk
+            p
+              a(href='https://vk.com/id63675911') https://vk.com/id63675911
